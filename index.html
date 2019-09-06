@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Blue Sky Campaign</title>
+</head>
+<body>
+<h1>Blue Sky Campaign
+</h1>
+<div class = "text-area">
+<h2>Introduction
+</h2>
+<video width = "700" height = "500" controls>
+	<source src="video.mp4" type="video/mp4">
+</video>
+<h2>What is cyberbullying
+</h2>
+<p>Any bullying that occurs over digital devices
+Text, instagram, twitter, email, etc.
+Digital devices are effective tools for bullies
+Immediate contact the victim or post information.
+Posts and comments are left permanently
+Information spreads virally over the internet.
+However people do not treat cyberbullying as real bullying
+</p>
+<h2>What we do
+</h2>
+<p>We want to tackle cyberbullying at 3 major points: PET <br>
+P - The People<br>
+E - The Environment<br>
+T - The Tone<br>
+We will spread awareness about cyberbullying and provide an outlet for cyberbullied students to report incidents freely
+
+</p>
+<h2>Blue Sky Week
+</h2>
+<p style = "font-size: 10px; text-align: center">Click on the slide to continue
+</p>
+<div class = "slide">
+	<a onclick="nextSlide()"><image src = "slide1.JPG"style = "width:100%;height:100%;" ></image></a>
+</div>
+<div class = "slide">
+	<a onclick="nextSlide()"><image src = "slide2.JPG"style = "width:100%;height:100%;"></image></a>
+</div>
+<div class = "slide">
+	<a onclick="nextSlide()"><image src = "slide3.JPG"style = "width:100%;height:100%;"></image></a>
+</div>
+<div class = "slide">
+	<a onclick="nextSlide()"><image src = "slide4.JPG"style = "width:100%;height:100%;"></image></a>
+</div>
+<div class = "slide">
+	<a onclick="nextSlide()"><image src = "slide5.JPG"style = "width:100%;height:100%;"></image></a>
+</div>
+<script>
+	var currentslide = 1;
+	displaySlide(currentslide)
+	function nextSlide(){
+		if (currentslide < 5){
+			currentslide ++;
+			displaySlide(currentslide)
+		}
+		else {
+			currentslide = 1;
+			displaySlide(currentslide)
+		}
+	}
+	function displaySlide(currentslide){
+		var n;
+		var slides = document.getElementsByClassName("slide");
+		for (n = 0;n<slides.length; n++){
+			slides[n].style.display = "none"
+		}
+		slides[currentslide-1].style.display = "block";  
+	}
+</script>
+<p>More details found in <a href="https://docs.google.com/presentation/d/18a0KMvXeJIoeDMD8UcOHH6AI9AD6R7yMcpNPDpsbioc/edit?usp=sharing" target = "_blank">
+	this google slides</a>
+</p>
+<h2>Find us</h2>
+<p>Email: blueskycampaign2@gmail.com</p>
+<p>Instagram: <a href="https://www.instagram.com/blueskycampaign1/" target = "_blank">@blueskycampaign1</a> </p>
+<p>Facebook: <a href="https://www.facebook.com/daehyun.kyoung.3" target = "_blank">Blue Sky Campaign</a></p>
+</div>
+</body>
+</html>
